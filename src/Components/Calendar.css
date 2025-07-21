@@ -1,0 +1,110 @@
+.calendar {
+  width: 100%;
+  min-width: 28rem;
+  background-color: #111214;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 999;
+  margin-bottom: 2rem;
+}
+
+.navigate-date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.navigate-date h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #bbb;
+}
+
+.buttons i {
+  font-size: 1.8rem;
+  color: #bbb;
+  cursor: pointer;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: 500;
+  color: #999;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+  
+  max-height: calc(4.5rem * 5 + 0.5rem * 4); /* 5 rows of ~3.5rem height with 0.5rem gap */
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.days::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+
+.day {
+  background-color: #1c1d1f;
+  color: #eee;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+  min-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day:hover {
+  background-color: #2a2b2e;
+  cursor: pointer;
+}
+
+.today {
+  background-color: #3f51b5;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #fff;
+}
+
+.faded {
+  opacity: 0.4;
+}
+
+@media (max-width: 900px) {
+  .calendar {
+    height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .navigate-date h2 {
+    font-size: 1.6rem;
+  }
+
+  .buttons i {
+    font-size: 1.6rem;
+  }
+
+  .day {
+    min-height: 2.8rem;
+    font-size: 0.9rem;
+  }
+
+  .weekdays {
+    font-size: 0.9rem;
+  }
+}
