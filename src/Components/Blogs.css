@@ -211,3 +211,37 @@ body {
 .blogs-close-btn i {
   font-size: 4rem;
 }
+
+
+@media (max-width: 900px) {
+
+  .blogs-left {
+    background: none;
+    width: 100%;
+
+  }
+  .blogs-left img{
+    top: 10%;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+
+  .blogs-right {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+  }
+
+  .blogs-close-btn{
+    top: 10rem;
+    right: 4rem;
+  }
+
+  .blogs-right-form {
+    margin-top: 25rem;
+    height: 100%;
+  }
+  
+}
