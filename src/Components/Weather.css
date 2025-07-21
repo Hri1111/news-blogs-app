@@ -1,16 +1,19 @@
 .weather {
   width: 100%;
   min-width: 28rem;
-  height: 45%;
+  max-height: 90vh; /* Prevent it from growing beyond viewport */
   background-color: #111214;
   border-radius: 1rem;
   padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Align content to top */
   align-items: center;
   row-gap: 3rem;
+  margin-top: 4rem;
+  overflow-y: auto; /* 👈 enables scrolling */
 }
+
 
 .search{
   display: flex;
