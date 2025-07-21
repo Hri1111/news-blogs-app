@@ -525,4 +525,33 @@
   .headline-title i.bookmark {
     align-self: flex-end;
   }
+
+   .search-bar {
+    max-width: 100%;
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .search-bar input {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 0 3.5rem 0 1.5rem;
+    border-radius: 2rem;
+  }
+
+  .search-bar button {
+    font-size: 1.6rem;
+    right: 1rem;
+  }
+
+  .news-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    row-gap: 1rem;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
 }
